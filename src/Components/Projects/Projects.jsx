@@ -59,7 +59,7 @@ const Projects = () => {
          <div className='bg-[#FDF8F7]'>
             <div className='text-center my-12'>
                 <h1 className='font-semibold text-yellow-500 text-2xl'>Portfolio</h1>
-                <h1 className='font-bold mb-5 text-4xl'>My Amazing Work</h1>
+                <h1 className='font-bold mb-5 text-4xl'>Projects</h1>
                 <hr />
             </div>
             <div className='bg-slate-800 md:ms-8 rounded-md md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-between p-8 container mx-auto'>

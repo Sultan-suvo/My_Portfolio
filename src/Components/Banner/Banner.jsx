@@ -44,7 +44,7 @@ const Banner = () => {
             <div>
               <button className="btn btn-primary text-white font-medium py-3 px-6 rounded-full shadow-lg mr-4">
                 <a href={ExamplePdf} download className="text-white">
-                  Download CV
+                  Download Resume
                 </a>
               </button>
               <button className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-3 px-6 rounded-full shadow-lg">

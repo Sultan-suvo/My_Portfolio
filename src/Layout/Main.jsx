@@ -8,6 +8,7 @@ import Contact from '../Components/Contact/Contact';
 import Footer from '../Components/Footer/Footer';
 import Feedback from '../Components/Feedback/Feedback';
 import BlogSection from '../Components/BlogSection/BlogSection';
+import Services from '../Components/Services/Services';
 
 const Main = () => {
     return (
@@ -15,6 +16,7 @@ const Main = () => {
             <Navbar></Navbar>
             <Banner></Banner>
             <Experience></Experience>
+            <Services></Services>
             <Skills></Skills>
             <Projects></Projects>
             <Feedback></Feedback>
