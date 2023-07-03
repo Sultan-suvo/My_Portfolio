@@ -67,10 +67,11 @@ const Projects = () => {
                     <Slide key={item.name} direction="left">
                         <Card className='shadow-2xl my-8 w-full mx-auto'>
                             <CardMedia
-                                component="img"
-                                alt={item.name}
-                                height="180"
-                                image={item.image}
+                                  component="img"
+                                  alt={item.name}
+                                  height="180"
+                                  image={item.image}
+                                  className="w-full object-cover"
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
