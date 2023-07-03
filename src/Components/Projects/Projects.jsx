@@ -12,64 +12,64 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 const Projects = () => {
     const items = [
         {
-            name: 'Language Learning',
-            image: 'https://i.ibb.co/7j2vvHr/download-1.png',
-            live: 'https://language-club-a06e8.web.app/',
-            source: 'https://github.com/mominulhouqe/Learning-Language',
+            name: 'Song Book',
+            image: 'https://i.ibb.co/gvVkrXg/screencapture-supersonic-sports-cars-web-app-2023-07-03-10-25-34.png',
+            live: 'https://supersonic-sports-cars.web.app/',
+            source: 'https://github.com/Sultan-suvo/Sports_CAR_Client',
             description:'This is Language Learning Website.Here You can Pursahse your Language course Which you can learning any language.This is have admin panel,insturctor panel,and also student panel.Populare Class section and also populare instructor class.There is i used HTML,CSS,TailwindCss,ReactJs,Nodejs,ExpressJs,Mongodb(CRUD operation)'
         },
         {
-            name: 'News Paper',
-            image: 'https://i.ibb.co/HrTsq20/download-2.png',
-            live: 'https://newspaper-d6a09.web.app/category/0',
-            source: 'https://github.com/mominulhouqe/dragon-newspaper',
+            name: 'Sports Car',
+            image: 'https://i.ibb.co/DRBb2XM/screencapture-summercamp-e9fc3-web-app-2023-07-03-10-42-10.png',
+            live: 'https://summercamp-e9fc3.web.app/',
+            source: 'https://github.com/Sultan-suvo/Summer_camp_CLient',
             description:'This is news Paper Website.Here i used  apis.I used here HTML,CSS,Tailwindcss,Reactjs,Nodejs,ExpressJs.You can read updated news & also read Breaking News.'
         },
         {
-            name: 'Quiz Hero',
-            image: 'https://i.ibb.co/nBVm3V9/download-4.png',
-            live: 'https://lovely-tiramisu-27d49c.netlify.app/',
-            source: 'https://github.com/mominulhouqe/Quiz-App',
+            name: 'Foodgenix',
+            image: 'https://i.ibb.co/dbpxN2g/screencapture-chef-recipe-hunter-ca501-web-app-2023-07-03-10-49-30.png',
+            live: 'https://chef-recipe-hunter-ca501.web.app/',
+            source: 'https://github.com/Sultan-suvo/Chef-recipe-hunter-client',
             description:'Quiz Hero Website you can test your Knowledge JavaScrtipt language. I used here HTML, CSS,javaScript Language'
         },
         {
-            name: 'The Cheif',
-            image: 'https://i.ibb.co/vxSmN3j/download.png',
-            live: 'https://chif-master.web.app/',
-            source: 'https://github.com/mominulhouqe/cheif-master',
+            name: 'Quiz Hero',
+            image: 'https://i.ibb.co/JB909yG/screencapture-sultan-suvo-github-io-Quiz-hero-2023-07-03-11-45-02.png',
+            live: 'https://github.com/Sultan-suvo/Quiz_hero',
+            source: 'https://github.com/Sultan-suvo/Quiz_hero',
             description:'This website you can find your best cheif in this website. I used here Technology HTML,CSS,Tailwidcss,ReactJs,Nodejs,ExpressJs,Mongodb(CRUD Operation).'
         },
         {
-            name: 'Job Frags',
-            image: 'https://i.ibb.co/xgL7sWc/download-3.png',
-            live: 'https://willowy-tartufo-23b198.netlify.app/',
-            source: 'https://github.com/mominulhouqe/Job-Hunting',
+            name: 'Abcause Convention Hall',
+            image: 'https://i.ibb.co/Cs3gjkt/screencapture-reliable-pony-59a0b5-netlify-app-2023-07-03-11-56-47.png',
+            live: 'https://reliable-pony-59a0b5.netlify.app/',
+            source: 'https://github.com/Sultan-suvo/Abcause_Convention_HALL',
             description:'The Job Frags Website is here you can apply many other jobs.You can see your grap this website. What you apply this website you can also see that.I used here technology HTML,CSS,JavaScript,ReactJs'
         },
         {
             name: 'The Bike',
-            image: 'https://i.ibb.co/M60SJWL/download-5.png',
-            live: 'https://mominulhouqe.github.io/Biker-Zone/',
-            source: 'https://github.com/mominulhouqe/Biker-Zone',
+            image: 'https://i.ibb.co/wBKB2Nc/screencapture-second-price-surge-sh-2023-07-03-12-04-24.png',
+            live: 'https://second-price.surge.sh/#',
+            source: 'https://github.com/Sultan-suvo/Bikers-Zone',
             description:'The Bike Website where you can buy your best bike.The bike website i used Technology HTML,CSS,tailwidcss,Reactjs,Website is fully responsive.I used Also here RESETAPIs'
         },
     ];
 
     return (
-        <div className='bg-[#FDF8F7]'>
+         <div className='bg-[#FDF8F7]'>
             <div className='text-center my-12'>
                 <h1 className='font-semibold text-yellow-500 text-2xl'>Portfolio</h1>
                 <h1 className='font-bold mb-5 text-4xl'>My Amazing Work</h1>
                 <hr />
             </div>
-            <div className='flex flex-wrap gap-5 items-center justify-center container mx-auto'>
+            <div className='bg-slate-800 md:ms-8 rounded-md md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-between p-8 container mx-auto'>
                 {items.map((item) => (
                     <Slide key={item.name} direction="left">
-                        <Card className='shadow-2xl w-full' sx={{ maxWidth: 345 }}>
+                        <Card className='shadow-2xl my-8 w-full mx-auto'>
                             <CardMedia
                                 component="img"
                                 alt={item.name}
-                                height="140"
+                                height="180"
                                 image={item.image}
                             />
                             <CardContent>
@@ -77,7 +77,7 @@ const Projects = () => {
                                     {item.name}
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                  {item.description}
+                                    {item.description}
                                 </Typography>
                             </CardContent>
                             <CardActions>

@@ -15,7 +15,7 @@ const Banner = () => {
             />
           </div>
           <div className="md:w-1/2 text-center md:text-left">
-            <h2 className="text-white text-2xl md:text-4xl font-bold leading-tight">
+            <h2 className="text-white mt-4 text-2xl md:text-4xl font-bold leading-tight">
               Hi, Im
             </h2>
             <h1 className="text-white text-4xl md:text-6xl font-bold leading-tight mb-4">

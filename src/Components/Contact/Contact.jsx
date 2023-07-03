@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import { Fade } from 'react-awesome-reveal';
 import { AiOutlineSend, AiOutlineHome, AiOutlinePhone, AiOutlineMail } from 'react-icons/ai';
 
@@ -7,7 +7,7 @@ const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_hgig8s9', 'template_cgtnr22', form.current, 'wKVtU0oESIRidSasE')
+    emailjs.sendForm('service_pnqtxvb', 'template_p6ej70w', form.current, 'fuWUlP4cCIbtrVTxx')
       .then((result) => {
         console.log(result.text);
         form.current.reset(); // Reset the form after sending
@@ -18,7 +18,7 @@ const Contact = () => {
 
   return (
     <div className='bg-[#FDF8F7] '>
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-8 py-8">
       <h2 className="text-4xl text-yellow-500 text-center font-bold mb-4">Contact Us</h2>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-6 justify-center'>
         <div>
@@ -69,21 +69,21 @@ const Contact = () => {
         </div>
         <div className="bg-white rounded-lg shadow-md p-6">
           <Fade triggerOnce={true} delay={200}>
-            <h3 className="text-xl font-semibold text-gray-800 mb-4">Contact Information</h3>
+            <h3 className="text-xl font-bold text-gray-800 mb-4">Contact Information</h3>
             <p className="text-gray-700 mb-2">
               <AiOutlineHome className="inline-block mr-2" />
-              <span className="font-semibold">Address:</span> Habiganj
+              <span className="font-bold">Address:</span> Sylhet
             </p>
             <p className="text-gray-700 mb-2">
               <AiOutlinePhone className="inline-block mr-2" />
-              <span className="font-semibold">Phone:</span> +8801937985805
+              <span className="font-bold">Phone:</span> +8801887884965
             </p>
             <p className="text-gray-700 mb-2">
               <AiOutlineMail className="inline-block mr-2" />
-              <span className="font-semibold">Email:</span> mominulhauqe14@gmail.com
+              <span className="font-bold">Email:</span> sulthansuvo72@gmail.com
             </p>
             <p className="text-gray-700">
-              <span className="font-semibold">Working Hours:</span> 24/7 Days
+              <span className="font-bold">Working Hours:</span> 24/7 Days
             </p>
           </Fade>
         </div>

@@ -4,7 +4,7 @@ import CountUp from 'react-countup';
 
 const Experience = () => {
   return (
-    <div className="container mx-auto px-4 lg:px-8">
+    <div className="container mx-auto px-8 lg:px-8">
       <div className="flex flex-wrap py-12 shadow-lg justify-center items-center bg-gradient-to-r from-slate-100 to-base-200 rounded-lg">
         <div className="w-full md:w-auto md:flex-1 flex items-center mb-6 md:mb-0">
           <span className="text-5xl md:text-6xl text-blue-500">
